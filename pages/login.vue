@@ -82,6 +82,17 @@
             >
           </div>
 
+          <p class="mt-6 text-base text-[#737373]">
+            New to Netflix?
+            <button
+              type="button"
+              class="border-none bg-transparent p-0 font-semibold text-white cursor-pointer hover:underline"
+              @click="$router.push('/signup')"
+            >
+              Sign up now.
+            </button>
+          </p>
+
           <p class="mt-6 text-xs leading-[1.7] text-[#666]">
             This page is protected by Google reCAPTCHA to ensure you're not a
             bot.
@@ -202,6 +213,17 @@
               >Forgot password?</a
             >
           </div>
+
+          <p class="mb-5 text-base text-[#737373]">
+            New to Netflix?
+            <button
+              type="button"
+              class="border-none bg-transparent p-0 font-semibold text-white cursor-pointer hover:underline"
+              @click="$router.push('/signup')"
+            >
+              Sign up now.
+            </button>
+          </p>
 
           <p class="text-xs leading-[1.7] text-[#666]">
             This page is protected by Google reCAPTCHA to ensure you're not a
