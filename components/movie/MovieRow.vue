@@ -8,11 +8,11 @@
     </h2>
 
     <!-- Row wrapper with relative positioning for arrows -->
-    <div class="group/row relative">
+    <div class="group/row relative overflow-x-hidden md:overflow-x-visible">
       <!-- Left arrow -->
       <button
         v-if="canScrollLeft"
-        class="absolute left-0 top-0 z-10 flex h-full w-10 -translate-x-full items-center justify-center bg-black/50 opacity-0 transition-all duration-200 group-hover/row:opacity-100 hover:bg-black/80 border-none cursor-pointer"
+        class="absolute left-0 top-0 z-10 hidden h-full w-10 -translate-x-full items-center justify-center bg-black/50 opacity-0 transition-all duration-200 group-hover/row:opacity-100 hover:bg-black/80 border-none cursor-pointer md:flex"
         @click="scroll('left')"
       >
         <svg
@@ -49,7 +49,7 @@
       <!-- Right arrow -->
       <button
         v-if="canScrollRight"
-        class="absolute right-0 top-0 z-10 flex h-full w-10 translate-x-full items-center justify-center bg-black/50 opacity-0 transition-all duration-200 group-hover/row:opacity-100 hover:bg-black/80 border-none cursor-pointer"
+        class="absolute right-0 top-0 z-10 hidden h-full w-10 translate-x-full items-center justify-center bg-black/50 opacity-0 transition-all duration-200 group-hover/row:opacity-100 hover:bg-black/80 border-none cursor-pointer md:flex"
         @click="scroll('right')"
       >
         <svg
